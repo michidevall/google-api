@@ -1,7 +1,6 @@
-from re import A
-from django import forms
 from django.forms import ModelForm
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.models import User
 from django import forms
 from .models import UserProfile
 
@@ -20,7 +19,7 @@ class UserForm(UserCreationForm):
     
     # reCAPTHCHA token
     token = forms.CharField(
-        widget=forms.HiddenIput())
+        widget=forms.HiddenInput())
     
     class Meta:
         model = User

@@ -58,7 +58,9 @@ ROOT_URLCONF = 'apis.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            'templates'
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,9 +131,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 
 GOOGLE_API_KEY = "AIzaSyAkRDro8L9Pfh2cL7-SZTRx7NZQtcEyoqs"
 
-RECAPTCHA_KEY = "6LdZbJIgAAAAAO11NvbXksCoJsT8nsKYfYcf4E8P"
+RECAPTCHA_PUBLIC_KEY = "6LdZbJIgAAAAAO11NvbXksCoJsT8nsKYfYcf4E8P"
 
-RECAPTCHA_SECRET_KEY = "6LdZbJIgAAAAAD8XF07tHzDUfHI04H7OTnJkIG0j"
+RECAPTCHA_PRIVATE_KEY = "6LdZbJIgAAAAAD8XF07tHzDUfHI04H7OTnJkIG0j"
 
 
 # Default primary key field type
